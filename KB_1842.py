@@ -80,6 +80,7 @@ def main():
     while not rospy.is_shutdown():
         ur5.go_to_predefined_pose("Orangest-1")
         #rospy.sleep(2)
+        ur5.go_to_predefined_pose("orange_step2")
         ur5.go_to_predefined_pose("Orange_hold")
         #rospy.sleep(2)
         ur5.go_to_predefined_pose("close")
