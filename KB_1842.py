@@ -78,10 +78,10 @@ def main():
     ur5 = Ur5Moveit()
 
     while not rospy.is_shutdown():
-        ur5.go_to_predefined_pose("Orangest-1")
+        ur5.go_to_predefined_pose("Orangest-1")         #Joint angles - 110,80,-80,59,45,15
         #rospy.sleep(2)
-        ur5.go_to_predefined_pose("orange_step2")
-        ur5.go_to_predefined_pose("Orange_hold")
+        ur5.go_to_predefined_pose("orange_step2")       #Joint angles - 110,80,-80,35,45,15
+        ur5.go_to_predefined_pose("Orange_hold")        #Joint angles - 110,80,-80,23,49,15
         #rospy.sleep(2)
         ur5.go_to_predefined_pose("close")
         #rospy.sleep(2)
@@ -91,9 +91,9 @@ def main():
         #rospy.sleep(2)
         ur5.go_to_predefined_pose("open")           ###picked up the orange fruit
         # rospy.sleep(3)
-        ur5.go_to_predefined_pose("Red_step1")
+        ur5.go_to_predefined_pose("Red_step1")          #Joint angles - 55,68,-102,21,-49,11
         #rospy.sleep(2)
-        ur5.go_to_predefined_pose("Red_hold")
+        ur5.go_to_predefined_pose("Red_hold")           #Joint angles - 55,68,-102,-9,-49,11
         #rospy.sleep(2)
         ur5.go_to_predefined_pose("close")
         #rospy.sleep(2)
